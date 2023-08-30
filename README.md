@@ -42,13 +42,13 @@ var simulationSettings = new SimulationSettings
 	RandomSeedInstance = default,
 };
   ```
-Everybody just leaves the toilet seat as it is at the end of every visit. And that gives us around **7.75** toilet seat actions per day.
+Everybody just leaves the toilet seat as it is at the end of every visit. And that gives us around **7.75** toilet seat interactions per day.
 
 If I change Steve's pee strategy to "always lower the seat":
 ```csharp
 visitors[1].PeeStrategy = new StandAndLowerPeeStrategy();
 ```
-that will give us around **11.2** toilet seat actions per day.
+that will give us around **11.2** toilet seat interactions per day.
 
-*Changing Steve's strategy to "sit and leave" will drop actions to zero, but it's a different story.*
+*Changing Steve's strategy to "sit and leave" will drop interactions to zero, but it's a different story.*
 </details>
